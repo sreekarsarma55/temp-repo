@@ -102,11 +102,14 @@ def decode_file(path, bundle, decoder, show_alts=True, plot=True, key=None, open
         A.render_sheet(items, png, title=f"{os.path.basename(path)}  decoder={decoder}")
         A.log(f" Saved {png}")
         if open_png:
-            opener = "open" if sys.platform == "darwin" else "xdg-open"
             try:
-                subprocess.Popen([opener, png], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                if sys.platform == "win32":
+                    os.startfile(os.path.abspath(png))  # Windows
+                else:
+                    opener = "open" if sys.platform == "darwin" else "xdg-open"
+                    subprocess.Popen([opener, png], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
             except OSError:
-                pass
+                A.log(f" (could not open the picture automatically; open {png} yourself)")
     A.log("=" * 92)
     return results
 
