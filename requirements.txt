@@ -1,0 +1,9 @@
+# Tested with these versions (Python 3.11). To share a trained model file with classmates, everyone
+# should use the same versions:  pip install -r requirements.txt
+numpy==2.4.6
+pandas==3.1.1
+scikit-learn==1.9.1
+scipy==1.17.1
+lightgbm==4.7.0
+matplotlib==3.11.2
+joblib==1.6.0

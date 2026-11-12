@@ -1,0 +1,7 @@
+{
+  "decoder": "auto",
+  "letter_acc": 0.7744932432432432,
+  "from": "evaluate.py",
+  "n_records": 290,
+  "group": "canvas"
+}
