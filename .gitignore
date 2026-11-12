@@ -1,0 +1,9 @@
+venv/
+.venv/
+__pycache__/
+data/
+rehearsal/
+outputs/live/
+outputs/cv/fold*.pkl
+models/rehearsal*
+*.tmp

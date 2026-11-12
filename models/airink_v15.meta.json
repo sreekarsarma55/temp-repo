@@ -1,0 +1,24 @@
+{
+  "version": "v15",
+  "alphabet": "ACEFHJKMNPRTUVWXY",
+  "n_records": 290,
+  "data_sha": "9e57207af0a67df4",
+  "fast": false,
+  "group_mode": "canvas",
+  "packages": {
+    "numpy": "2.4.6",
+    "pandas": "3.1.1",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.17.1",
+    "lightgbm": "4.7.0"
+  },
+  "created": "2026-11-12 12:20:59",
+  "train_seconds": 379.9,
+  "ink_metrics": {
+    "auc_s1": 0.9649923122995369,
+    "auc_s2": 0.9706933596598994,
+    "f1": 0.8907271793174911,
+    "th": 0.43999999999999995,
+    "alpha": 1.0
+  }
+}
